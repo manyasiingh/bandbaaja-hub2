@@ -24,7 +24,7 @@ COPY admin /var/www/html
 RUN chmod +x /var/www/html/start.sh
 
 # Copy the Nginx configuration file
-COPY conf/nginx/default.conf /etc/nginx/nginx.conf
+COPY conf/nginx/default.conf /etc/nginx/conf.d/default.conf
 
 EXPOSE 8080
 
