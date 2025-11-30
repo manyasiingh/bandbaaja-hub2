@@ -21,6 +21,7 @@ COPY --from=build /app/admin /var/www/html/
 
 # Copy the rest of the application files from the admin subdirectory
 COPY admin /var/www/html
+RUN chmod +x /var/www/html/start.sh
 
 # Copy the Nginx configuration file
 COPY conf/nginx/default.conf /etc/nginx/conf.d/default.conf
