@@ -12,8 +12,8 @@ WORKDIR /app
 
 # Copy application code into the build stage
 # Assuming the root of your application code is in the 'admin' directory
-COPY admin/ composer.json ./
-COPY admin/ composer.lock ./
+COPY admin/composer.json ./
+COPY admin/composer.lock ./
 
 # Install dependencies
 RUN composer install --no-dev --optimize-autoloader
