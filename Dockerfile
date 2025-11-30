@@ -8,7 +8,7 @@ COPY admin/composer.json ./
 COPY admin/composer.lock ./
 # Install dependencies (no dev dependencies for production)
 RUN composer install --no-dev --optimize-autoloader
-
+RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer
 # Stage 2: Final runtime image with PHP-FPM and Nginx
 FROM php:8.2-fpm-alpine
 
