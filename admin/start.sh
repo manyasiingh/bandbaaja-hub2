@@ -1,6 +1,5 @@
 #!/usr/bin/env bash
 
-# File: admin/start.sh
 
 # Run Composer install again (optional, but ensures dependencies are present)
 echo "Running Composer install..."
