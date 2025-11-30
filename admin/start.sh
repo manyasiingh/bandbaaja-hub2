@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+#!/bin/sh
 
 
 # Run Composer install again (optional, but ensures dependencies are present)
